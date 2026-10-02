@@ -1,8 +1,8 @@
-package com.test.Estoque_CRUD_SpringBoot.service;
+package com.test.Estoque_CRUD_SpringBoot.domain.service;
 
-import com.test.Estoque_CRUD_SpringBoot.domain.Product;
+import com.test.Estoque_CRUD_SpringBoot.domain.entity.Product;
+import com.test.Estoque_CRUD_SpringBoot.domain.repository.ProductRepository;
 import com.test.Estoque_CRUD_SpringBoot.mapper.ProductMapper;
-import com.test.Estoque_CRUD_SpringBoot.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +42,7 @@ public class ProductService {
     public Product updateProduct(Long id, Product newProduct){
         Product oldProduct = findById(id);
         newProduct.setLastUpdate(LocalDateTime.now());
-        productMapper.maperProduct(newProduct, oldProduct);
+        productMapper.mapperProduct(newProduct, oldProduct);
         return productRepository.save(oldProduct);
     }
 

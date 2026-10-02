@@ -1,7 +1,7 @@
-package com.test.Estoque_CRUD_SpringBoot.controller;
+package com.test.Estoque_CRUD_SpringBoot.api.controller;
 
-import com.test.Estoque_CRUD_SpringBoot.domain.Product;
-import com.test.Estoque_CRUD_SpringBoot.service.ProductService;
+import com.test.Estoque_CRUD_SpringBoot.domain.entity.Product;
+import com.test.Estoque_CRUD_SpringBoot.domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

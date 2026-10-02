@@ -1,8 +1,7 @@
-package com.test.Estoque_CRUD_SpringBoot.repository;
+package com.test.Estoque_CRUD_SpringBoot.domain.repository;
 
-import com.test.Estoque_CRUD_SpringBoot.domain.Product;
+import com.test.Estoque_CRUD_SpringBoot.domain.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository

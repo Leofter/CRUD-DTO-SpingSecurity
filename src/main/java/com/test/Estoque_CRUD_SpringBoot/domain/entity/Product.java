@@ -1,4 +1,4 @@
-package com.test.Estoque_CRUD_SpringBoot.domain;
+package com.test.Estoque_CRUD_SpringBoot.domain.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 @Entity
 public class Product {

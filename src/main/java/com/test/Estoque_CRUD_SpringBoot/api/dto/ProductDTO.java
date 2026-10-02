@@ -1,4 +1,4 @@
-package com.test.Estoque_CRUD_SpringBoot.domain;
+package com.test.Estoque_CRUD_SpringBoot.api.dto;
 
 public class ProductDTO {
     private String name;
