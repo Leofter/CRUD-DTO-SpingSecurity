@@ -4,79 +4,83 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
 import java.time.LocalDateTime;
 
 @Entity
 public class Product {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
-    private String description;
-    private Float price;
-    private Integer amount;
-    private LocalDateTime lastUpdate;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    public Long getId() {
-        return id;
-    }
+  private String name;
+  private String description;
+  private Float price;
+  private Integer amount;
+  private LocalDateTime lastUpdate;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public Float getPrice() {
-        return price;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setPrice(Float price) {
-        this.price = price;
-    }
+  public Float getPrice() {
+    return price;
+  }
 
-    public Integer getAmount() {
-        return amount;
-    }
+  public void setPrice(Float price) {
+    this.price = price;
+  }
 
-    public void setAmount(Integer amount) {
-        this.amount = amount;
-    }
+  public Integer getAmount() {
+    return amount;
+  }
 
-    public LocalDateTime getLastUpdate() {
-        return lastUpdate;
-    }
+  public void setAmount(Integer amount) {
+    this.amount = amount;
+  }
 
-    public void setLastUpdate(LocalDateTime lastUpdate) {
-        this.lastUpdate = lastUpdate;
-    }
+  public LocalDateTime getLastUpdate() {
+    return lastUpdate;
+  }
 
-    public Product(){
+  public void setLastUpdate(LocalDateTime lastUpdate) {
+    this.lastUpdate = lastUpdate;
+  }
 
-    }
+  public Product() {}
 
-    public Product(Long id, String name, String description, Float price, Integer amount, LocalDateTime lastUpdate) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.amount = amount;
-        this.lastUpdate = lastUpdate;
-    }
+  public Product(
+      Long id,
+      String name,
+      String description,
+      Float price,
+      Integer amount,
+      LocalDateTime lastUpdate) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+    this.price = price;
+    this.amount = amount;
+    this.lastUpdate = lastUpdate;
+  }
 }
